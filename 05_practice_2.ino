@@ -7,9 +7,9 @@ void setup() {
   i = 0;
   while(i<5){
     digitalWrite(7, 1);
-    delay(125);
+    delay(100);
     digitalWrite(7, 0);
-    delay(125);
+    delay(100);
     i++;
   }
   digitalWrite(7, 1);
