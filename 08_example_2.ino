@@ -45,7 +45,7 @@ void loop() {
       out_dis = distance;
     }  // LED ON 밝기 제어  
   }else{
-    if (out_dis > 300) {
+    if (distance > 300) {
       analogWrite(PIN_LED, 765-(51/20)*out_dis);
     }
     else{
