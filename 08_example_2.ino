@@ -14,6 +14,7 @@
 #define SCALE (0.001 * 0.5 * SND_VEL) // coefficent to convert duration to distance
 
 unsigned long last_sampling_time;   // unit: msec
+float out_dis;
 
 void setup() {
   // initialize GPIO pins
@@ -28,7 +29,6 @@ void setup() {
 
 void loop() {
   float distance;
-  float out_dis;
   // wait until next sampling time. 
   // millis() returns the number of milliseconds since the program started.
   //    Will overflow after 50 days.
