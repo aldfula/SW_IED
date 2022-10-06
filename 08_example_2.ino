@@ -49,7 +49,7 @@ void loop() {
       analogWrite(PIN_LED, 765-(51/20)*out_dis);
     }
     else{
-      analogWrite(PIN_LED, (51/20)*out_dis);
+      analogWrite(PIN_LED, (51/20)*out_dis-255);
     }
   }
   
